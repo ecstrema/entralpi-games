@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #screen-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      height: 90vh;
+    }
+
+    .game-link {
+      color: black;
+      height: 400px;
+      width: 300px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-decoration: none;
+
+      border-radius: 12px;
+
+      overflow: hidden;
+      position: relative;
+    }
+
+    .preview-image {
+      position: relative;
+    }
+
+    .overlay-text {
+      color: whitesmoke;
+      /* background-color: #2c3e50aa; */
+      text-shadow: 1px 1px 2px #2c3e50, 0 0 1em blue, 0 0 0.2em blue;
+      border-radius: 6px;
+      padding: 5px;
+      white-space: nowrap;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="screen-center" style="flex-direction: row;">
+      <a class="game-link" href="./flappy-bird/index.html">
+        <img class="preview-image" src="./previews/flappy-bird.jpg" />
+        <h1 class="overlay-text">Flappy Bird</h1>
+      </a>
+      <a class="game-link" href="./pong/index.html" style="background-color: #2c3e50;">
+        <img class="preview-image" src="./previews/pong.jpg" style="scale: 60%;" />
+        <h1 class="overlay-text">Pong</h1>
+      </a>
+    </div>
+  </main>
+</body>
+
+</html>
